@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/emailWorker.ts"
+    "dev": "nodemon ./src/emailWorker.ts",
+    "build": "tsc",
+    "start": "node ./dist/emailWorker.js"
   },
   "keywords": [],
   "author": "",
