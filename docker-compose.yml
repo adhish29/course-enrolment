@@ -40,7 +40,8 @@ services:
   email-service-app:
     build:
       context: ./email-Service
-    container_name: "email-service-app"
+    deploy:
+      replicas: 3
     depends_on:
       - redis
     environment:
